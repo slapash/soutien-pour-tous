@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Soutien pour tous</title>
+    </head>
+
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <img src="images/zozor_logo.png" alt="Logo de 'Soutien pour tous'" id="logo" />
+                    <h1>Soutien pour tous</h1>
+                </div>
+                
+                <div id="navbar">
+                    <a href="#">Accueil</a>
+                    <a href="#">Infos</a>
+                    <a href="#">Donations</a>
+                </div>
+            </header>
+            
+            <div id="banniere_image">
+                
+                <div id="banniere_description">
+                    Qui sommes nous ?
+                    <a href="#" class="bouton_rouge">Plus d'infos</a>
+                </div>
+            </div>
+            
+            <section>
+                <article>
+                    <h1 class="title"><img src="images/ico_epingle.png" alt="Logo réduit" class="ico_categorie" />L'association soutien pour tous</h1>
+                    <p >Lorem ipsum dolor sit amet...</p>
+                    <p>Vivamus sed libero nec mauris pulvinar facilisis ut non sem...</p>
+                    <p>Phasellus ligula massa, congue ac vulputate non, dignissim at augue...</p>
+                </article>
+            </section>
+            
+            <footer>
+                <div id="Contacter">
+                    <h1>Nous Contacter</h1>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Mail pro</a> </li>
+                        <li><a href="#">Mail perso</a> </li>
+                    </ul>
+                </div>
+                <div id="mes_projets">
+                    <h1>Plus sur mes projets</h1>
+                    <ul>
+                        <li><a href="#">Donations à travers Casablanca</a></li>
+                        <li><a href="#">Vente de produits dérivés</a></li>
+                        <li><a href="#">Planning</a></li>
+                    </ul>
+                </div>
+                
+            </footer>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+    </body>
+</html>
